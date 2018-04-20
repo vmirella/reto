@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Preguntados(RETO)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="favicn.ico" href="http://pruebas.co.pe/repositorio/signo.ico">
+  </head>
+  <body>
+    <header>
+      <div id="divTitle"><!-- div que contiene el título preguntados-->
+        <h1>
+          <marquee direction="up" width="100%" height="100" behavior="alternate">
+            <marquee behavior="alternate">
+              PREGUNTADOS <img src="http://atthetartan.ca/wp-content/uploads/2016/01/question-480x423.png" alt="">
+            </marquee>
+          </marquee>
+        </h1>
+      </div>
+      <div id="divName"><!-- div que contiene el saludo de bienvenida preguntados-->
+        <h2 id="name"></h2>
+      </div>
+      <div class="clean"></div>
+    </header>
+
+    <!-- Tabs -->
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'category1')" id="defaultOpen">Programación</button>
+      <button class="tablinks" onclick="openTab(event, 'category2')" id="tabCategory2">Animales</button>
+      <button class="tablinks" onclick="openTab(event, 'category3')" id="tabCategory3">Gentilicios</button>
+      <button class="tablinks" onclick="openTab(event, 'category4')" id="tabCategory4">Cine</button>
+
+    </div>
+
+    <div id="message" class="divMessage"><!-- Se imprime un mensaje en caso de no querer jugar -->
+
+    </div>
+
+    <!-- Inicio tab1 -->
+    <div id="category1" class="tabcontent">
+      <div id="result1" class="divResult"><!-- Se imprimen las respuestas incorrectas y correctas -->
+        <div id="correct1" class="correct">
+          <img src="http://pruebas.co.pe/repositorio/check.jpg" alt="correct">
+          <hr>
+        </div>
+        <div id="incorrect1" class="incorrect">
+          <img src="http://pruebas.co.pe/repositorio/x.jpg" alt="incorrect">
+          <hr>
+        </div>
+      </div>
+      <div id="button1" class="divButton">
+        <button type="button" onclick="playCategory1()">Comenzar</button>
+      </div>
+
+      <div class="clean"></div>
+    </div>
+    <!-- Fin tab1 -->
+
+    <!-- Inicio tab2 -->
+    <div id="category2" class="tabcontent">
+      <div id="result2" class="divResult"><!-- Se imprimen las respuestas incorrectas y correctas -->
+        <div id="correct2" class="correct">
+          <img src="http://pruebas.co.pe/repositorio/check.jpg" alt="correct">
+          <hr>
+        </div>
+        <div id="incorrect2" class="incorrect">
+          <img src="http://pruebas.co.pe/repositorio/x.jpg" alt="incorrect">
+          <hr>
+        </div>
+      </div>
+      <div id="button2" class="divButton">
+        <button type="button" onclick="playCategory2()">Comenzar</button>
+      </div>
+
+      <div class="clean"></div>
+    </div>
+    <!-- Fin tab2 -->
+
+    <!-- Inicio tab3 -->
+    <div id="category3" class="tabcontent">
+      <div id="result3" class="divResult"><!-- Se imprimen las respuestas incorrectas y correctas -->
+        <div id="correct3" class="correct">
+          <img src="http://pruebas.co.pe/repositorio/check.jpg" alt="correct">
+          <hr>
+        </div>
+        <div id="incorrect3" class="incorrect">
+          <img src="http://pruebas.co.pe/repositorio/x.jpg" alt="incorrect">
+          <hr>
+        </div>
+      </div>
+      <div id="button3" class="divButton">
+        <button type="button" onclick="playCategory3()">Comenzar</button>
+      </div>
+
+      <div class="clean"></div>
+    </div>
+    <!-- Fin tab3 -->
+
+    <!-- Inicio tab4 -->
+    <div id="category4" class="tabcontent">
+      <div id="result4" class="divResult"><!-- Se imprimen las respuestas incorrectas y correctas -->
+        <div id="correct4" class="correct">
+          <img src="http://pruebas.co.pe/repositorio/check.jpg" alt="correct">
+          <hr>
+        </div>
+        <div id="incorrect4" class="incorrect">
+          <img src="http://pruebas.co.pe/repositorio/x.jpg" alt="incorrect">
+          <hr>
+        </div>
+      </div>
+      <div id="button4" class="divButton">
+        <button type="button" onclick="playCategory4()">Comenzar</button>
+      </div>
+
+      <div class="clean"></div>
+    </div>
+    <!-- Fin tab4 -->
+
+<!--Aqui ejeuto mi script -->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
